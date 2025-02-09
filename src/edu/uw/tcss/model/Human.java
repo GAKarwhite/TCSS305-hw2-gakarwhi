@@ -43,7 +43,7 @@ public class Human extends AbstractVehicle {
         Direction toGive = null;
         boolean crosswalk = false;
         final Iterator<Direction> directions = theNeighbors.keySet().iterator();
-        Direction current = null;
+        Direction current;
         while (directions.hasNext() && !crosswalk) {
             current = directions.next();
             if (theNeighbors.get(current) == Terrain.CROSSWALK //if there is a crosswalk
